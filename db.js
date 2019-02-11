@@ -85,32 +85,3 @@ module.exports = {
 	getContents
 }
 
-
-// conn.sync( { force: true } )
-// 	// .then(() => Page.create({name: 'Home'}))
-// 	// .then(() => Page.create( {name: 'Employees'}))
-// 	// .then(() => Page.create( {name: 'Contact'}))
-// 	.then(() => Promise.all([
-// 		Page.create( {name: 'Home'} ),
-// 		Page.create( {name: 'Employees'} ),
-// 		Page.create( {name: 'Contact'} )
-// 	]))
-// 	.then(([homePage, employeesPage, contactPage]) => {
-// 		return Promise.all([
-// 			Content.create({title: 'Welcome Home 1', body: 'xoxoxo', paged: homePage.id})
-			// Content.create({title: 'Welcome Home 2', body: 'xoxoxo', pageid: Promise.resolve(homePage)}),
-			// Content.create({title: 'Larry', body: 'CTO', pageid: Promise.resolve(employeesPage)}),
-			// Content.create({title: 'Moe', body: 'CEO', pageid: Promise.resolve(employeesPage)}),
-			// Content.create({title: 'Curly', body: 'COO', pageid: Promise.resolve(employeesPage)}),
-			// Content.create({title: 'Phone', body: '212-555-1212', pageid: Promise.resolve(contactPage)}),
-			// Content.create({title: 'Telex', body: '212-555-1213', pageid: Promise.resolve(contactPage)}),
-			// Content.create({title: 'Fax', body: '212-555-1214', pageid: Promise.resolve(contactPage)})
-	// 	]);
-	// })
-	// .then((contentCreated, homePage) => {
-	// 	return contentCreated.setPage(homePage)
-	// })
-	// .then(() => Content.create( {name: 'Welcome Home 1', body: 'xoxoxo', pageid: 1))
-	// .catch(e => console.log(e));
-
-// process.exit(0);
