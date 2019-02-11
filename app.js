@@ -76,7 +76,7 @@ const renderPage = ( {pages, page, contents} ) => {
 }
 
 app.get('/', (req, res, next) => {
-	res.send(req.pages);
+	res.redirect('/pages/1');
 	next();
 });
 
