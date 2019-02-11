@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
-const conn = new Sequelize('acme_web_seq_db', 'Theo', '', {
+// 'acme_web_seq_db'
+const conn = new Sequelize(process.env.DATABASE_URL, 'Theo', '', {
 	dialect: 'postgres',
 	logging: false,
 });
