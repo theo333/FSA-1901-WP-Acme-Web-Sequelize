@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize');
-// 'acme_web_seq_db'
-const conn = new Sequelize(process.env.DATABASE_URL, '', '', {
-	dialect: 'postgres',
+
+const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/acme_web_seq_db', {
 	logging: false,
 });
 
