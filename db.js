@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-
+//console.log(process.env);
 const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/acme_web_seq_db', {
 	logging: false,
 });
@@ -20,7 +20,6 @@ const Content = conn.define('content', {
 		type: Sequelize.TEXT,
 	}
 });
-
 
 const getPages = () =>{
 	return Page.findAll({
